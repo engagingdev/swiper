@@ -9,8 +9,8 @@
     <div class="swiper-pagination" slot="pagination"></div>
     <swiper-slide v-for="(square, index) in squares" :key="index" class="square">
       <div class="square-content">
-        <div>{{ square.month }}</div>
-        <div>{{ square.day }}</div>
+        <span>{{ square.month }}</span>&nbsp;
+        <span>{{ square.day }}</span>
       </div>
     </swiper-slide>
   </swiper>
@@ -76,9 +76,21 @@ export default {
 };
 </script>
 <style scoped>
-.square-content{
-  margin-top: var(--swiper-navigation-top-offset, 4%) !important;
-  background-color: #8E8E8E;
-  padding: 15% 22.5% 20% 22.5%;
+.swiper {
+  width: 100%;
+  max-width: 800px;
+  height: 100%;
+  max-height: 880px;
 }
+.swiper-slide {
+  background-color: #8E8E8E;
+  color: white;
+  margin-top: 139px;
+  height: 76%;
+}
+
+.square-content span {
+  font-size: 30px;
+}
+
 </style>
