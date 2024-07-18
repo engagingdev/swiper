@@ -1,6 +1,7 @@
 <template>
   <swiper :scrollbar="scrollbarConfig"
           :slidesPerView="1"
+          :initialSlide="0"
           :spaceBetween="30"
           :pagination="pagination"
           :navigation="true"

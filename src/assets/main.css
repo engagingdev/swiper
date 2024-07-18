@@ -3,23 +3,27 @@
   background-color: #373737;
   color: black;
 }
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 20px) !important;
+}
 
 .swiper-pagination .swiper-pagination-bullet {
   width: 254px;
+  height: 254px;
   text-align: center;
-  line-height: 20px;
   font-weight: 400;
   font-size: 50px;
-  padding: 2% 0% 4.5% 0%;
-  line-height: 60.51px;
   color: #000;
   opacity: 1;
   border-radius: var(--swiper-pagination-bullet-border-radius, 15%);
   background: #8E8E8E;
-  margin-right: 0.5% !important;
-  margin-left: 0.5% !important;
-  
+  line-height: 60.51px;
+  /* Flexbox solution */
+  display: -webkit-inline-flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
 }
+
 .swiper-pagination .swiper-pagination-bullet-active {
   color: black;
   background: #373737;
