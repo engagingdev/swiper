@@ -1,3 +1,4 @@
+
 .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #373737;
   color: black;
@@ -15,7 +16,9 @@
   opacity: 1;
   border-radius: var(--swiper-pagination-bullet-border-radius, 15%);
   background: #8E8E8E;
-  margin-right: 1% !important;
+  margin-right: 0.5% !important;
+  margin-left: 0.5% !important;
+  
 }
 .swiper-pagination .swiper-pagination-bullet-active {
   color: black;
@@ -37,10 +40,10 @@
   justify-content: center;
 }
 .swiper .swiper-button-prev {
-  left: 1%;
+  left: 0%;
 }
 .swiper .swiper-button-next {
-  right: 1%;
+  right: 0%;
 }
 .swiper-pagination-bullet-active-next{
   visibility: hidden;
@@ -63,12 +66,12 @@
 
 .swiper-horizontal > .swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {
   position: absolute;
-  left: var(--swiper-scrollbar-sides-offset, 1%);
+  left: var(--swiper-scrollbar-sides-offset, 0%) !important;
   bottom: var(--swiper-scrollbar-bottom, 4px);
   top: 16.5% !important;
   z-index: 50;
   height: var(--swiper-scrollbar-size, 65px) !important;
-  width: calc(100% - 2* var(--swiper-scrollbar-sides-offset, 1%));
+  width: 100% !important;
   border-radius: 30px !important;
 }
 .swiper-scrollbar-drag {

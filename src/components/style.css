@@ -1,5 +1,9 @@
 #app {
+  width: 100%;
+  max-width: 3058px;
   height: 100%;
+  max-height: 2859px;
+  background-color: #D9D9D9;
 }
 html,
 body {

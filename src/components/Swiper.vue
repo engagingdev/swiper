@@ -77,10 +77,8 @@ export default {
 </script>
 <style scoped>
 .swiper {
-  width: 100%;
-  max-width: 3058px;
-  height: 100%;
-  max-height: 2859px;
+  width: 95%;
+  height: 99%;
 }
 .swiper-wrapper .swiper-slide {
   background-color: #8E8E8E;
