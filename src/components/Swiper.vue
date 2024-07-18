@@ -78,19 +78,22 @@ export default {
 <style scoped>
 .swiper {
   width: 100%;
-  max-width: 800px;
+  max-width: 3058px;
   height: 100%;
-  max-height: 880px;
+  max-height: 2859px;
 }
-.swiper-slide {
+.swiper-wrapper .swiper-slide {
   background-color: #8E8E8E;
   color: white;
-  margin-top: 139px;
-  height: 76%;
+  margin-top: 20%;
+  height: 78%;
 }
 
 .square-content span {
-  font-size: 30px;
+  font-size: 200px;
+  font-weight: 400;
+  line-height: 242.05px;
+
 }
 
 </style>
